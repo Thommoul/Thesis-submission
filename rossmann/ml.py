@@ -13,7 +13,6 @@ from .data import load_store_history
 from .device import get_xgb_device
 from .features import FEATURES, add_calendar_features
 
-
 def _make_xgb_regressor(**params):
     device = get_xgb_device()
     if device == "cuda":
